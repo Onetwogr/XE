@@ -1,4 +1,4 @@
-XE , an iOS App for real estate
+XE , an iOS App for Real Estate
 
 Creator
 
