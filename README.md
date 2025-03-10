@@ -1,4 +1,4 @@
-XE , an iOS App Challenge for XE.gr
+XE , an iOS App for real estate
 
 Creator
 
