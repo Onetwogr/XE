@@ -33,13 +33,10 @@ struct XELogoView: View {
     }
 }
 
-struct XELogoView_Previews: PreviewProvider {
-    static var previews: some View {
-        GeometryReader { geometry in
-            XELogoView(geometry: geometry, fadeIn: .constant(true))
-                .previewLayout(.sizeThatFits)
-                .padding()
-        }
+#Preview {
+    GeometryReader { geometry in
+        XELogoView(geometry: geometry, fadeIn: .constant(true))
+            .padding()
     }
 }
 

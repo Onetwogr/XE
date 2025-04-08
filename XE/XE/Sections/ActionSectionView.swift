@@ -25,7 +25,8 @@ struct ActionSectionView: View {
             XEButton(
                 title: title,
                 action: submitForm,
-                isDisabled: !isFormValid
+                isDisabled: !isFormValid,
+                frame: CGSize(width: 300, height: 60)
             )
         }
     }

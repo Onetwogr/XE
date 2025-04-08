@@ -56,15 +56,13 @@ struct SellSectionView: View {
     }
 }
 
-struct SellSectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        SellSectionView(
-            title: .constant("Home"), // Use .constant to provide a binding
-            location: .constant("Litohoro"),
-            price: .constant("100000"),
-            description: .constant("Test string"),
-            isLocationSelected: .constant(false)
-        )
-    }
+#Preview {
+    SellSectionView(
+        title: .constant("Home"),
+        location: .constant("Litohoro"),
+        price: .constant("100000"),
+        description: .constant("Test string"),
+        isLocationSelected: .constant(false)
+    )
 }
 

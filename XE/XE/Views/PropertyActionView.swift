@@ -65,9 +65,7 @@ struct PropertyActionView: View {
     }
 }
 
-struct PropertyActionView_Previews: PreviewProvider {
-    static var previews: some View {
-        PropertyActionView(actionType: .sell)
-    }
+#Preview {
+    PropertyActionView(actionType: .sell)
 }
 

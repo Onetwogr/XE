@@ -5,7 +5,6 @@
 //  Created by Jannis Ellie Gkortsos on 6/2/25.
 //
 
-
 import SwiftUI
 
 // View for displaying the footer with creator's name, dynamically styled based on screen size and theme
@@ -29,12 +28,9 @@ struct XEFooterView: View {
     }
 }
 
-struct XEFooterView_Previews: PreviewProvider {
-    static var previews: some View {
-        GeometryReader { geometry in
-            XEFooterView(geometry: geometry)
-                .previewLayout(.sizeThatFits)
-                .padding()
-        }
+#Preview {
+    GeometryReader { geometry in
+        XEFooterView(geometry: geometry)
+            .padding()
     }
 }

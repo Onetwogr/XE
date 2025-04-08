@@ -117,15 +117,23 @@ struct XETextField: View {
     }
 }
 
-struct XETextField_Previews: PreviewProvider {
-    static var previews: some View {
-
-        XETextField(title: "Title", placeholder: "Type a title", text: .constant(""), isSelected: .constant(false))
-            .previewLayout(.sizeThatFits)
-            .padding()
+#Preview {
+    VStack {
+        XETextField(
+            title: "Title",
+            placeholder: "Type a title",
+            text: .constant(""),
+            isSelected: .constant(false)
+        )
+        .padding()
         
-        XETextField(title: "Location*", placeholder: "Enter location", text: .constant(""), endpoint: APIEndpoints.autocomplete, isSelected: .constant(false))
-            .previewLayout(.sizeThatFits)
-            .padding()
+        XETextField(
+            title: "Location*",
+            placeholder: "Enter location",
+            text: .constant(""),
+            endpoint: APIEndpoints.autocomplete,
+            isSelected: .constant(false)
+        )
+        .padding()
     }
 }

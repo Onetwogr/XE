@@ -46,10 +46,10 @@ struct XETextEditor: View {
     }
 }
 
-struct XETextEditor_Previews: PreviewProvider {
-    static var previews: some View {
-        XETextEditor(placeholder: "Enter description here", text: .constant("Test"))
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
+#Preview {
+    XETextEditor(
+        placeholder: "Enter description here",
+        text: .constant("Test")
+    )
+    .padding()
 }

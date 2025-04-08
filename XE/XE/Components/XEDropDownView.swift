@@ -54,20 +54,16 @@ struct DropdownView: View {
     }
 }
 
-struct DropdownView_Previews: PreviewProvider {
-    static var previews: some View {
-
-        DropdownView(
-            text: .constant(""),
-            showResults: .constant(false),
-            isSelected: .constant(false),
-            lastSelectedText: .constant("Result 1"),
-            results: [
-                DropdownView.ResultItem(text: "Result 1"),
-                DropdownView.ResultItem(text: "Result 2"),
-                DropdownView.ResultItem(text: "Result 3")
-            ]
-        )
-    }
+#Preview {
+    DropdownView(
+        text: .constant(""),
+        showResults: .constant(false),
+        isSelected: .constant(false),
+        lastSelectedText: .constant("Result 1"),
+        results: [
+            DropdownView.ResultItem(text: "Result 1"),
+            DropdownView.ResultItem(text: "Result 2"),
+            DropdownView.ResultItem(text: "Result 3")
+        ]
+    )
 }
-
